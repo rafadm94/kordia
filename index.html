@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kordia</title>
+    <title>Kordia - Coming Soon</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
+            background-color: #003A5E; /* Cor azul escuro */
             font-family: Arial, sans-serif;
-            background-color: #002B47; /* Cor de fundo semelhante à imagem */
-            color: white;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-align: center;
+            overflow: hidden;
         }
 
-        img {
-            max-width: 80%;
-            height: auto;
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
             margin-bottom: 20px;
         }
 
-        h1 {
-            font-size: 2.5em;
-            color: #FFA500; /* Laranja semelhante à imagem */
-            margin: 0;
+        .logo img {
+            width: 600px; /* Alterado de 500px para 600px */
         }
 
-        p {
-            font-size: 1.2em;
-            color: white;
-            margin: 0;
+        .coming-soon {
+            color: #DA8A15; /* Cor laranja */
+            font-size: 1.5rem;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .loading {
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <img src="kordia_img.png" alt="Kordia Logo">
-    <h1>Coming soon...</h1>
-    <p>Encontra. Conecta. Cria.</p>
+    <div class="container">
+        <!-- Logótipo -->
+        <div class="logo">
+            <img src="img/01 _ Logo.svg" alt="Kordia Logo">
+        </div>
+
+        <!-- Animação de carregamento -->
+        <div class="loading">
+            <img src="img/Loading Animation.gif" alt="Loading Animation" width="100">
+        </div>
+
+        <!-- Texto "Coming Soon" -->
+        <div class="coming-soon">
+            <img src="img/02 _ Coming Soon.svg" alt="Coming Soon">
+        </div>
+
+        <!-- Ícones de redes sociais -->
+        <div class="social-icons">
+            <img src="img/03 _ Icons.svg" alt="Ícones de Redes Sociais">
+        </div>
+    </div>
 </body>
 </html>
