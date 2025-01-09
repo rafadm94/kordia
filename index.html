@@ -14,43 +14,95 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
         }
 
         .container {
             text-align: center;
             color: white;
-        }
-
-        .logo {
-            margin-bottom: 20px;
+            padding: 20px;
+            width: 60%;
+            max-width: 1000px;
+            box-sizing: border-box;
         }
 
         .logo img {
-            width: 600px; /* Alterado de 500px para 600px */
+            width: 80%;
+            max-width: 800px;
+            height: auto;
         }
 
         .coming-soon {
             color: #DA8A15; /* Cor laranja */
-            font-size: 1.5rem;
-            margin-top: 10px;
-            margin-bottom: 40px;
+            font-size: 3rem;
+            margin-top: 20px;
+            margin-bottom: 50px;
         }
 
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
         }
 
         .social-icons img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
         }
 
         .loading {
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+
+        .loading img {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .logo img {
+                width: 70%;
+            }
+
+            .coming-soon {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+
+            .social-icons img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .loading img {
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                width: 90%;
+            }
+
+            .coming-soon {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .social-icons {
+                gap: 15px;
+            }
+
+            .social-icons img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .loading img {
+                width: 80px;
+            }
         }
     </style>
 </head>
@@ -63,7 +115,7 @@
 
         <!-- Animação de carregamento -->
         <div class="loading">
-            <img src="img/Loading Animation.gif" alt="Loading Animation" width="100">
+            <img src="img/Loading Animation.gif" alt="Loading Animation">
         </div>
 
         <!-- Texto "Coming Soon" -->
