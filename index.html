@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +37,7 @@
         }
 
         .social-icons {
+            position: relative;
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -47,8 +46,30 @@
         }
 
         .social-icons img {
-            width: 120px;
+            width: 240px; /* Ajustado para acomodar os dois ícones juntos */
+            height: auto;
+        }
+
+        .facebook-icon,
+        .instagram-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px; /* Metade do tamanho da imagem */
             height: 120px;
+        }
+
+        .facebook-icon {
+            left: calc(50% - 130px); /* Posicionado sobre o ícone do Facebook */
+        }
+
+        .instagram-icon {
+            left: calc(50% + 10px); /* Posicionado sobre o ícone do Instagram */
+        }
+
+        .facebook-icon:hover,
+        .instagram-icon:hover {
+            cursor: pointer;
         }
 
         .loading {
@@ -72,8 +93,21 @@
             }
 
             .social-icons img {
+                width: 200px;
+            }
+
+            .facebook-icon,
+            .instagram-icon {
                 width: 100px;
                 height: 100px;
+            }
+
+            .facebook-icon {
+                left: calc(50% - 110px);
+            }
+
+            .instagram-icon {
+                left: calc(50% + 10px);
             }
 
             .loading img {
@@ -96,8 +130,21 @@
             }
 
             .social-icons img {
-                width: 80px;
-                height: 80px;
+                width: 180px;
+            }
+
+            .facebook-icon,
+            .instagram-icon {
+                width: 90px;
+                height: 90px;
+            }
+
+            .facebook-icon {
+                left: calc(50% - 90px);
+            }
+
+            .instagram-icon {
+                left: calc(50%);
             }
 
             .loading img {
@@ -126,7 +173,10 @@
         <!-- Ícones de redes sociais -->
         <div class="social-icons">
             <img src="img/03 _ Icons.svg" alt="Ícones de Redes Sociais">
+
+            <!-- Grelha invisível -->
+            <a href="https://www.facebook.com/profile.php?id=61572407913093" target="_blank" class="facebook-icon" aria-label="Facebook"></a>
+            <a href="https://www.instagram.com/kordia.pt/?hl=pt" target="_blank" class="instagram-icon" aria-label="Instagram"></a>
         </div>
     </div>
 </body>
-</html>
